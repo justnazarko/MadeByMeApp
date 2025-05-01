@@ -1,0 +1,9 @@
+**/.idea/
+**/__pycache__/
+.env
+**/*.log
+**/*.session
+**/*.session-journal
+/logs
+jobs.sqlite
+*.dev*

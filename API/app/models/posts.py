@@ -42,7 +42,7 @@ class Post(Base):
     credit_card_number = Column(String(16), nullable=True)
     status = Column(Enum(PostStatus, name="status"), nullable=True)
 
-    user = relationship("User", backref="posts")
+    user = relationship("User",back_populates="posts")
     reviews = relationship("Review", back_populates="post", cascade="all, delete-orphan")
     favorites = relationship("Favorite", back_populates="post", cascade="all, delete-orphan")
 
